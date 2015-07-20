@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>My paint</title>
+        <meta charset='utf-8' />
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <canvas id="board" width="500" height="500">Votre navigateur ne supporte pas le canvas.</canvas>
+        <button id="pen">Pen</button>
+        <button id="line">line</button>
+        <button id="rect">Rectangle</button>
+        <button id="circle">Cercle</button>
+        <input type="color" id="color" /><span>Color</span>
+        <button id="crop">Crop</button>
+        <input type="checkbox" id="fill" /><span>remplie</span>
+        <p></p>
+        <button id="raz">RàZ</button>
+        <a id="dload" href="#">Download as image</a>
+        <input type="text" id="file" />
+        <button id="upload">Confirm image upload</button>
+        <span>Width : </span><input type="range" id="width" min="250" max="1000" value="500" step="25" />
+        <span>Height : </span><input type="range" id="height" min="250" max="1000" value="500" step="25" />
+        <span>Epaisseur du pen : </span><input type="range" id="penter" value="1" min="1" max="10" step="1" />
+        <div>Shadow : </div><input type="checkbox" id="shadow" />
+        <script src="tool.js"></script>
+        <script src="paint.js"></script>
+    </body>
+</html>
